@@ -1,16 +1,19 @@
 # flutter_animations
 
-A new Flutter project.
+This repo contains examples of animations made with Flutter.
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To build and run this project:
 
-A few resources to get you started if this is your first Flutter project:
+1. Get Flutter [here](https://flutter.dev) if you don't already have it
+2. Clone this repository.
+3. `cd` into the repo folder.
+4. run `flutter run-android` or `flutter run-ios` to build the app.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Animations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| <center> Menu animation </center>|
+|---|
+| <center> <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmgwNGNrZGVhZDIweDl6emRsZXBlMTgyOXo4bHM1Mm1pbGRzaDJlcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mMtZqVRbpJz5H76X9C/giphy.gif" width="250"> </center> |
