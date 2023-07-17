@@ -17,8 +17,11 @@ class _MenuAnimationState extends State<MenuAnimation>
   late final Animation<double> offsetFromCenterAnimation;
   late final Animation<double> angleAnimation;
   late final Animation<double> barWidthAnimation;
-  final fakeList = List.generate(4, (index) => index);
+  static const menuItemsLength = 14;
   static const maxWidth = 300.0;
+  static const circleSize = 60.0;
+  static const barHeight = 4.0;
+  static const circleMargin = 10.0;
 
   @override
   void initState() {
@@ -64,8 +67,11 @@ class _MenuAnimationState extends State<MenuAnimation>
     ));
   }
 
-  final circleSize = 60.0;
-  final barHeight = 4.0;
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -115,6 +121,8 @@ class _MenuAnimationState extends State<MenuAnimation>
                                     10,
                                 child: ListView.builder(
                                   itemBuilder: (context, index) {
+                                    final _internalCircleSize =
+                                        circleSize - circleMargin;
                                     return AnimatedOpacity(
                                       duration:
                                           const Duration(milliseconds: 100),
@@ -122,29 +130,29 @@ class _MenuAnimationState extends State<MenuAnimation>
                                           ? 0
                                           : controller.value,
                                       child: Container(
-                                        height: circleSize - 10,
-                                        width: circleSize - 10,
+                                        height: _internalCircleSize,
+                                        width: _internalCircleSize,
                                         margin: const EdgeInsets.symmetric(
                                             horizontal: 5),
                                         alignment: Alignment.center,
                                         child: Container(
                                           height: (1.3 *
                                                   controller.value *
-                                                  (circleSize - 10))
-                                              .clamp(0, circleSize - 10),
+                                                  _internalCircleSize)
+                                              .clamp(0, _internalCircleSize),
                                           width: (1.3 *
                                                   controller.value *
-                                                  (circleSize - 10))
-                                              .clamp(0, circleSize - 10),
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey.withOpacity(1),
+                                                  _internalCircleSize)
+                                              .clamp(0, _internalCircleSize),
+                                          decoration: const BoxDecoration(
+                                            color: Colors.grey,
                                             shape: BoxShape.circle,
                                           ),
                                         ),
                                       ),
                                     );
                                   },
-                                  itemCount: 14,
+                                  itemCount: menuItemsLength,
                                   shrinkWrap: true,
                                   scrollDirection: Axis.horizontal,
                                 ),
