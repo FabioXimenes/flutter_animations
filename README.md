@@ -14,6 +14,6 @@ To build and run this project:
 
 ## Animations
 
-| <center> Menu animation </center>|
-|---|
-| <center> <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmgwNGNrZGVhZDIweDl6emRsZXBlMTgyOXo4bHM1Mm1pbGRzaDJlcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mMtZqVRbpJz5H76X9C/giphy.gif" width="250"> </center> |
+| <center> Menu animation </center>| <center> Switcher Animation </center> 
+|---|---|
+| <center> <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmgwNGNrZGVhZDIweDl6emRsZXBlMTgyOXo4bHM1Mm1pbGRzaDJlcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mMtZqVRbpJz5H76X9C/giphy.gif" width="250"> </center> | <center> <img src="https://media.giphy.com/media/SObZh4e9EUZIwrmBuZ/giphy.gif" width="250"> </center> |
