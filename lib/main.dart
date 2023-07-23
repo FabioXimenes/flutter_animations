@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/src/animations/menu_animation.dart';
+import 'package:flutter_animations/src/animations/switcher_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +46,17 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.of(context).push(PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) {
-                    return const MenuAnimation(title: 'Menu animation');
+                    return const MenuAnimation();
+                  },
+                ));
+              },
+            ),
+            OutlinedButton(
+              child: const Text('Switcher animation'),
+              onPressed: () {
+                Navigator.of(context).push(PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return const SwitcherAnimationPage();
                   },
                 ));
               },

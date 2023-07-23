@@ -3,8 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class MenuAnimation extends StatefulWidget {
-  const MenuAnimation({super.key, required this.title});
-  final String title;
+  const MenuAnimation({super.key});
 
   @override
   State<MenuAnimation> createState() => _MenuAnimationState();
@@ -81,7 +80,7 @@ class _MenuAnimationState extends State<MenuAnimation>
           return Scaffold(
             appBar: AppBar(
               backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-              title: Text(widget.title),
+              title: const Text('Menu Animation'),
             ),
             body: const SizedBox(),
             floatingActionButton: AnimatedBuilder(
